@@ -3,7 +3,16 @@
 import sys
 
 def rock_paper_scissors(n):
-  pass 
+  ans = []
+  choices = ['rock', 'paper', 'scissors']
+  def bt(curr, n):
+    if not n:
+      ans.append(curr)
+      return ans
+    for choice in choices:
+      bt(curr + [choice], n-1)
+    return ans
+  return bt([], n)
 
 
 if __name__ == "__main__":
