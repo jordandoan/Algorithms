@@ -23,6 +23,6 @@ if __name__ == "__main__":
     else:
         print("Usage: making_change.py [amount]")
 
-coins = [1, 2, 5]
-amnt = 5
+coins = [1, 2, 3]
+amnt = 6
 print(making_change(amnt, coins))
